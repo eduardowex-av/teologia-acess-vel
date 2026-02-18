@@ -1,16 +1,43 @@
-<main class="container">
-  <h2>Estudos</h2>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estudos | Teologia Acessível</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Teologia Acessível</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="estudos.html">Estudos</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+    <button id="toggleTema" title="Alternar modo escuro">🌙</button>
+  </header>
 
-  <select id="filtro">
-    <option value="">Todas as categorias</option>
-    <option value="Doutrina">Doutrina</option>
-    <option value="Bíblia">Bíblia</option>
-    <option value="Vida Cristã">Vida Cristã</option>
-  </select>
+  <main class="container">
+    <h2>Estudos</h2>
 
-  <div id="lista-estudos"></div>
-</main>
+    <div class="filtros">
+      <input type="text" id="busca" placeholder="Buscar estudo..." />
+      <select id="filtro">
+        <option value="">Todas as categorias</option>
+        <option value="Doutrina">Doutrina</option>
+        <option value="Bíblia">Bíblia</option>
+        <option value="Vida Cristã">Vida Cristã</option>
+      </select>
+    </div>
 
-<script src="estudos.js"></script>
+    <div id="lista-estudos"></div>
+  </main>
 
+  <footer>
+    <p>© 2026 – Teologia Acessível</p>
+  </footer>
 
+  <script src="estudos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
