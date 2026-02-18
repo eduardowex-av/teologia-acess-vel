@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>A Salvação pela Graça | Teologia Acessível</title>
+  <title>Estudo | Teologia Acessível</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,49 +14,26 @@
       <a href="estudos.html">Estudos</a>
       <a href="sobre.html">Sobre</a>
     </nav>
-    <button id="toggleTema">🌙</button>
+    <button id="toggleTema" title="Alternar modo escuro">🌙</button>
   </header>
 
   <main class="container">
-    <article class="post">
-      <h2>A Salvação pela Graça</h2>
-      <p class="meta">Publicado em 17/02/2026</p>
+    <article class="post" id="post"></article>
 
-      <p>
-        A salvação pela graça é um dos pilares da fé cristã protestante.
-        A Bíblia ensina que não somos salvos por obras, mas pela graça de Deus,
-        mediante a fé.
-      </p>
-
-      <p>
-        Isso significa que a salvação é um dom imerecido, concedido por Deus
-        por meio de Jesus Cristo.
-      </p>
-
-      <blockquote>
-        “Porque pela graça sois salvos, mediante a fé; e isto não vem de vós; é dom de Deus.” (Ef 2:8)
-      </blockquote>
-    </article>
+    <section class="card">
+      <h3>Comentários</h3>
+      <input id="nome" placeholder="Seu nome" />
+      <textarea id="comentario" rows="3" placeholder="Seu comentário"></textarea>
+      <button onclick="comentar()">Enviar</button>
+      <div id="comentarios"></div>
+    </section>
   </main>
 
   <footer>
     <p>© 2026 – Teologia Acessível</p>
   </footer>
-</body>
+
+  <script src="comentarios.js"></script>
   <script src="script.js"></script>
+</body>
 </html>
-
-<section class="card">
-  <h3>Comentários</h3>
-  <input id="nome" placeholder="Seu nome" /><br><br>
-  <textarea id="comentario" rows="3" placeholder="Seu comentário"></textarea><br><br>
-  <button onclick="comentar()">Enviar</button>
-
-  <div id="comentarios"></div>
-</section>
-
-<script src="comentarios.js"></script>
-
-
-
-
