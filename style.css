@@ -23,6 +23,14 @@ nav a:hover {
   color: #facc15;
 }
 
+#toggleTema {
+  margin-top: 10px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
 .container {
   max-width: 900px;
   margin: 40px auto;
@@ -47,7 +55,7 @@ nav a:hover {
   border-radius: 8px;
 }
 
-.card {
+.card, .post {
   background: #fff;
   padding: 20px;
   border-radius: 12px;
@@ -55,23 +63,28 @@ nav a:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.post blockquote {
-  background: #f1f5f9;
-  padding: 15px;
-  border-left: 4px solid #0f172a;
-  margin: 20px 0;
+.filtros {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25d366;
+input, textarea, select, button {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #cbd5f5;
+  width: 100%;
+}
+
+button {
+  background: #0f172a;
   color: white;
-  padding: 12px 16px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
 }
 
 footer {
@@ -80,6 +93,7 @@ footer {
   color: #6b7280;
 }
 
+/* ===== MODO ESCURO ===== */
 .dark {
   background: #020617;
   color: #e5e7eb;
@@ -90,8 +104,20 @@ footer {
 }
 
 .dark .card,
-.dark .hero {
+.dark .hero,
+.dark .post {
   background: #020617;
   border: 1px solid #1e293b;
 }
 
+.dark nav a {
+  color: #e5e7eb;
+}
+
+.dark nav a:hover {
+  color: #facc15;
+}
+
+.dark footer {
+  color: #94a3b8;
+}
