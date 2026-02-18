@@ -94,30 +94,32 @@ footer {
 }
 
 /* ===== MODO ESCURO ===== */
-.dark {
-  background: #020617;
+body.dark {
+  background: #0f172a;
   color: #e5e7eb;
 }
 
-.dark header {
+body.dark header {
   background: #020617;
 }
 
-.dark .card,
-.dark .hero,
-.dark .post {
+body.dark .study-card {
   background: #020617;
+  color: #e5e7eb;
   border: 1px solid #1e293b;
 }
 
-.dark nav a {
+body.dark input,
+body.dark select,
+body.dark textarea {
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #334155;
+}
+
+body.dark button {
+  background: #1e293b;
   color: #e5e7eb;
 }
 
-.dark nav a:hover {
-  color: #facc15;
-}
 
-.dark footer {
-  color: #94a3b8;
-}
