@@ -1,10 +1,11 @@
 function salvarEstudo() {
-  const titulo = document.getElementById("titulo").value;
+  const titulo = document.getElementById("titulo").value.trim();
   const categoria = document.getElementById("categoria").value;
-  const conteudo = document.getElementById("conteudo").value;
+  const conteudo = document.getElementById("conteudo").value.trim();
+  const msg = document.getElementById("msg");
 
   if (!titulo || !conteudo) {
-    document.getElementById("msg").innerText = "Preencha tudo!";
+    msg.innerText = "Preencha título e conteúdo.";
     return;
   }
 
@@ -19,5 +20,8 @@ function salvarEstudo() {
   });
 
   localStorage.setItem("estudos", JSON.stringify(estudos));
-  document.getElementById("msg").innerText = "Estudo publicado com sucesso!";
+  msg.innerText = "Estudo publicado com sucesso!";
+
+  document.getElementById("titulo").value = "";
+  document.getElementById("conteudo").value = "";
 }
