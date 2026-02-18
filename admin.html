@@ -12,26 +12,29 @@
     <nav>
       <a href="index.html">Início</a>
       <a href="estudos.html">Estudos</a>
+      <a href="sobre.html">Sobre</a>
     </nav>
-    <button id="toggleTema">🌙</button>
+    <button id="toggleTema" title="Alternar modo escuro">🌙</button>
   </header>
 
   <main class="container">
     <h2>Novo Estudo</h2>
-    <input id="titulo" placeholder="Título do estudo" /><br><br>
+    <input id="titulo" placeholder="Título do estudo" />
     <select id="categoria">
       <option>Doutrina</option>
       <option>Bíblia</option>
       <option>Vida Cristã</option>
-    </select><br><br>
-    <textarea id="conteudo" rows="8" placeholder="Conteúdo do estudo"></textarea><br><br>
+    </select>
+    <textarea id="conteudo" rows="8" placeholder="Conteúdo do estudo"></textarea>
     <button onclick="salvarEstudo()">Publicar</button>
-
     <p id="msg"></p>
   </main>
 
+  <footer>
+    <p>© 2026 – Teologia Acessível</p>
+  </footer>
+
   <script src="painel.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
